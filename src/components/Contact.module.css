@@ -1,0 +1,172 @@
+.section {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--purple);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.sub {
+  font-size: 14px;
+  color: rgba(232, 230, 240, 0.45);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: rgba(232, 230, 240, 0.6);
+  text-decoration: none;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.2s;
+  font-family: var(--font-mono);
+}
+
+.link:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.linkIcon {
+  font-size: 16px;
+}
+
+/* Right column */
+.availLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--purple);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.2rem;
+}
+
+.availCard {
+  background: var(--green-bg);
+  border: 1px solid var(--green-border);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.availHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  display: inline-block;
+  box-shadow: 0 0 6px var(--green);
+}
+
+.availStatus {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--green);
+}
+
+.availDesc {
+  font-size: 13px;
+  color: rgba(232, 230, 240, 0.5);
+  line-height: 1.6;
+}
+
+.langCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.langLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2px;
+}
+
+.langRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.langName {
+  font-size: 13px;
+  color: rgba(232, 230, 240, 0.7);
+}
+
+.langValGreen {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--green);
+}
+
+.langValPurple {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--purple);
+}
+
+@media (max-width: 680px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}

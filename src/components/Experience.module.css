@@ -1,0 +1,103 @@
+.section {
+  position: relative;
+  z-index: 1;
+}
+
+.inner {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--purple);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.2rem;
+  color: var(--text);
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.meta {
+  padding-top: 2px;
+}
+
+.period {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(232, 230, 240, 0.35);
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+
+.company {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 3px;
+}
+
+.type {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.role {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: rgba(168, 153, 245, 0.8);
+  background: var(--purple-bg);
+  border: 1px solid rgba(168, 153, 245, 0.15);
+  border-radius: 4px;
+  padding: 3px 8px;
+}
+
+@media (max-width: 680px) {
+  .inner {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+}

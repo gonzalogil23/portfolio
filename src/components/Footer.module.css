@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--border-light);
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.copy {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(232, 230, 240, 0.2);
+  letter-spacing: 0.05em;
+}
+
+.back {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(168, 153, 245, 0.4);
+  cursor: pointer;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+}
+
+.back:hover {
+  color: var(--purple);
+}
+
+@media (max-width: 680px) {
+  .footerInner {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+}
