@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gonzalo Gil — Portfolio
 
 Portfolio personal de Gonzalo Gil, Full Stack Developer.
@@ -73,3 +74,7 @@ src/
 - **Textos**: editá `src/lib/translations.ts`
 - **Datos**: editá `src/lib/data.ts`
 - **Colores**: editá las variables en `src/app/globals.css`
+=======
+# portfolio
+Personal portfolio built with Next.js 14, TypeScript and CSS Modules. Features a bilingual interface (ES/EN), responsive design with mobile hamburger menu, and sections for skills, work experience, and featured projects. Deployed on Vercel.
+>>>>>>> 74a48f1b3c6dbbe419435cd6d800d4e43b645900
