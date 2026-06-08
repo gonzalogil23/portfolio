@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Gonzalo Gil — Portfolio
 
 Portfolio personal de Gonzalo Gil, Full Stack Developer.
